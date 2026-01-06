@@ -1,0 +1,45 @@
+#about {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+  
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* Adjust values as needed */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add a slightly lighter background */
+    transition: opacity 0.5s ease-in-out;
+}
+  
+  .our-vision {
+    margin-bottom: 20px; /* Adjust spacing between vision and about */
+  }
+.about-container {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#about p {
+    line-height: 1.5;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+#about p:before {
+    content: "\A";
+    display: block;
+    margin-bottom: 10px;
+}
