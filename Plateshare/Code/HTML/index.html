@@ -1,0 +1,142 @@
+<html>
+ <head>
+  <title>
+   PlateShare
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@700&display=swap" rel="stylesheet"/>
+  <style>
+   body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #006400;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+        .navbar .logo h1 {
+            margin: 0;
+            font-size: 36px; /* Increased font size */
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-top: 80px; /* Adjusted for fixed navbar */
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .text {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 55px;
+            font-weight: bold;
+            opacity: 0;
+            transition: top 1s ease-out, opacity 1s ease-out;
+        }
+        .hero .text.visible {
+            top: 50%;
+            opacity: 1;
+        }
+  </style>
+  <link rel="stylesheet" href="about.css">
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    <img alt="PlateShare Logo" height="50" src="logo.jpg" width="50"/>
+    <h1>
+     PlateShare
+    </h1>
+   </div>
+   <div class="menu">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="logintemp.php">
+     Login
+    </a>
+    <a href="donateindex.html" style="margin-right: 20px;">
+     Donate
+    </a>
+  
+   </div>
+  </div>
+  <div class="hero">
+   <img alt="Children eating food with volunteers" height="1080" src="mainphoto.jpg" width="1920"/>
+   <div class="text">
+    Turning Extra Into Enough!
+   </div>
+  </div>
+</div> 
+
+<section id="about">
+    <div class="about-content">
+      <div class="our-vision">
+        <h2>Our Vision</h2>
+        <p>Simple really, beat global hunger and bring out the best of humanity using food as a medium.</p>
+      </div>
+      <p>The idea is to create self-sustained chapters across the world who will look after their local community. And in the process, inspire people around us to give back to those 
+   who need it most.</p>
+    </div>
+  </section>
+    
+  </section>
+<section id="about">
+    <h2>About Us</h2>
+    <p>PlateShare is a platform that connects people with extra food to those who need it most. We help to reduce food waste and hunger by facilitating donations and connections within the community.</p>
+
+    <p>At PlateShare, we aim to bridge the gap between surplus food and hunger. Our mission is to prevent waste while ensuring no one goes hungry.
+
+        Each day, households have excess food that often gets discarded, while millions face food insecurity. Through our volunteer-driven platform, we collect surplus food and redistribute it to those in need, including the homeless and struggling families.
+        
+        Our goal is not just to feed people but to foster empathy, reduce food waste, and build a sustainable, caring community. We believe surplus food can be an opportunity to support our neighbors and strengthen local bonds.</p>
+    <p>Learn more about our mission and how you can get involved!</p>
+    </section>
+
+  <script>
+    window.addEventListener('load', function() {
+        document.querySelector('.hero .text').classList.add('visible');
+    });
+    
+  </script>
+  
+ </body>
+</html>

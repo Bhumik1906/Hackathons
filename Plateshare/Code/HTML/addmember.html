@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+</head>
+<body>
+    <h2>Add New Member</h2>
+    <form action="add_member.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="role">Role:</label><br>
+        <input type="text" id="role" name="role" required><br><br>
+
+        <label for="status">Status:</label><br>
+        <select id="status" name="status" required>
+            <option value="free">Free</option>
+            <option value="busy">Busy</option>
+        </select><br><br>
+
+        <button type="submit">Add Member</button>
+    </form>
+</body>
+</html>
